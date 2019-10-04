@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fechas</title>
+
+	<script type="text/javascript">
+
+		//Date() tiene métodos y atributos
+		//fecha es un objeto del tipo Date
+		var fecha = new Date();
+		document.write(fecha);
+		document.write('<br>')
+		document.write('mes ' + fecha.getMonth());
+		document.write('<br>')
+		document.write('numero del dia del mes ' +fecha.getDate());
+		document.write('<br>')
+		document.write('Número de dia de la semana ' +fecha.getDay());
+		document.write('<br>')
+		document.write('Año ' + fecha.getFullYear())
+		document.write('<br>')
+		document.write('Hora del día ' +fecha.getHours())
+		document.write('<br>')
+		document.write('Minuto ' + fecha.getMinutes())
+		document.write('<br> ')
+		document.write('Segundos' + fecha.getSeconds())
+		document.write('<br>')
+		document.write('Milisegundos ' + fecha.getMilliseconds())
+		document.write('<br>')
+
+		//setter   cambia fecha (atributo año)
+		fecha.setFullYear(2020);
+		document.write(fecha);
+		document.write('<br>')
+
+		var fechaHoy = new Date()
+		fechaHoy.setMonth(fechaHoy.getMonth()+1)
+		fechaHoy.setFullYear(fechaHoy.getFullYear()-1)
+		document.write(fechaHoy);
+		document.write('<br>')
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
